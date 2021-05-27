@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "payment"
+    },
+    "description": "Test",
+    "image": "//s3.amazonaws.com/appforest_uf/f1620853459433x875649578568782400/Frame%203.png",
+    "license": "open_source",
+    "link": "test",
+    "name": "Payment Qlipse",
+    "plugin_instructions": "test"
+}

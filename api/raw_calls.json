@@ -1,0 +1,140 @@
+{
+    "calls": {
+        "AAI": {
+            "headers": {
+                "AAJ": {
+                    "key": "Authorization",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Acess Token",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1620852581837x263752689395957760.plugin_api.AAI",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AAI\":{\"caption\":\"Acess Token\",\"fields\":{\"_p_access_token\":{\"ret_value\":\"text\",\"caption\":\"access_token\",\"sample_value\":\"5w72YhrCwugwASEQzgbpEzHNXq7F\",\"path\":[\"access_token\"]},\"_p_expires_in\":{\"ret_value\":\"text\",\"caption\":\"expires_in\",\"sample_value\":\"3599\",\"path\":[\"expires_in\"]}}}}",
+            "url": "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
+        },
+        "AAK": {
+            "headers": {
+                "AAL": {
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer IEz3GFhbP5ZUoGGLUdN8UHHdaSrB"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create Payment",
+            "params": {
+                "AAM": {
+                    "key": "BusinessShortCode",
+                    "private": true,
+                    "visibility": "secret"
+                },
+                "AAN": {
+                    "key": "Amount",
+                    "private": true,
+                    "value": "10",
+                    "visibility": "public"
+                },
+                "AAO": {
+                    "key": "Password",
+                    "private": true,
+                    "value": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjEwNTEyMjEyODEy"
+                },
+                "AAP": {
+                    "key": "PhoneNumber",
+                    "private": true,
+                    "value": "254707092102"
+                },
+                "AAQ": {
+                    "key": "TransactionType",
+                    "private": true,
+                    "value": "CustomerPayBillOnline"
+                },
+                "AAR": {
+                    "key": "Timestamp",
+                    "private": true,
+                    "value": "20210512212812"
+                },
+                "AAS": {
+                    "key": "PartyA",
+                    "private": true,
+                    "value": "254707092102"
+                },
+                "AAT": {
+                    "key": "PartyB",
+                    "private": true,
+                    "visibility": "secret"
+                },
+                "AAU": {
+                    "key": "CallBackURL",
+                    "private": true,
+                    "value": "https://qlipse.com/version-test/test_pay_?debug_mode=true",
+                    "visibility": "hidden"
+                },
+                "AAV": {
+                    "key": "AccountReference",
+                    "private": true,
+                    "value": "Shortcode 1"
+                },
+                "AAW": {
+                    "key": "TransactionDesc",
+                    "private": true,
+                    "value": "123"
+                }
+            },
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1620852581837x263752689395957760.plugin_api.AAK",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AAK\":{\"caption\":\"Create Payment\",\"fields\":{\"_p_MerchantRequestID\":{\"ret_value\":\"text\",\"caption\":\"MerchantRequestID\",\"sample_value\":\"22972-5838872-1\",\"path\":[\"MerchantRequestID\"]},\"_p_CheckoutRequestID\":{\"ret_value\":\"text\",\"caption\":\"CheckoutRequestID\",\"sample_value\":\"ws_CO_130520212052065515\",\"path\":[\"CheckoutRequestID\"]},\"_p_ResponseCode\":{\"ret_value\":\"text\",\"caption\":\"ResponseCode\",\"sample_value\":\"0\",\"path\":[\"ResponseCode\"]},\"_p_ResponseDescription\":{\"ret_value\":\"text\",\"caption\":\"ResponseDescription\",\"sample_value\":\"Success. Request accepted for processing\",\"path\":[\"ResponseDescription\"]},\"_p_CustomerMessage\":{\"ret_value\":\"text\",\"caption\":\"CustomerMessage\",\"sample_value\":\"Success. Request accepted for processing\",\"path\":[\"CustomerMessage\"]}}}}",
+            "url": "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
+        },
+        "AAX": {
+            "headers": {
+                "AAY": {
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer IEz3GFhbP5ZUoGGLUdN8UHHdaSrB"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Check Payment",
+            "params": {
+                "AAZ": {
+                    "key": "BusinessShortCode",
+                    "private": true,
+                    "value": "174379"
+                },
+                "AAa": {
+                    "key": "Password",
+                    "private": true,
+                    "value": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjEwNTEyMjEyODEy"
+                },
+                "AAb": {
+                    "key": "Timestamp",
+                    "private": true,
+                    "value": "20210512212812"
+                },
+                "AAc": {
+                    "key": "CheckoutRequestID",
+                    "private": true,
+                    "value": "ws_CO_130520210029158345"
+                }
+            },
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1620852581837x263752689395957760.plugin_api.AAX",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAX\":{\"caption\":\"Check Payment\",\"fields\":{\"_p_ResponseCode\":{\"ret_value\":\"text\",\"caption\":\"ResponseCode\",\"sample_value\":\"0\",\"path\":[\"ResponseCode\"]},\"_p_ResponseDescription\":{\"ret_value\":\"text\",\"caption\":\"ResponseDescription\",\"sample_value\":\"The service request has been accepted successsfully\",\"path\":[\"ResponseDescription\"]},\"_p_MerchantRequestID\":{\"ret_value\":\"text\",\"caption\":\"MerchantRequestID\",\"sample_value\":\"59673-4688180-1\",\"path\":[\"MerchantRequestID\"]},\"_p_CheckoutRequestID\":{\"ret_value\":\"text\",\"caption\":\"CheckoutRequestID\",\"sample_value\":\"ws_CO_130520210029158345\",\"path\":[\"CheckoutRequestID\"]},\"_p_ResultCode\":{\"ret_value\":\"text\",\"caption\":\"ResultCode\",\"sample_value\":\"17\",\"path\":[\"ResultCode\"]},\"_p_ResultDesc\":{\"ret_value\":\"text\",\"caption\":\"ResultDesc\",\"sample_value\":\"Rule limited.\",\"path\":[\"ResultDesc\"]}}}}",
+            "url": "https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query"
+        }
+    },
+    "human": "___Payments"
+}

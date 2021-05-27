@@ -1,0 +1,34 @@
+{
+    "category": "payment",
+    "display": "Base64 Encoding",
+    "fields": {
+        "AAE": {
+            "caption": "Paasskey",
+            "editor": "StaticText",
+            "name": "Paasskey",
+            "rank": 0
+        },
+        "AAF": {
+            "caption": "shortcode",
+            "editor": "StaticNumber",
+            "name": "Shortcode",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "AAG": {
+            "caption": "encoded",
+            "name": "encoded",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "date_timestamp",
+            "name": "date_timestamp",
+            "rank": 1,
+            "value": "number"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}
